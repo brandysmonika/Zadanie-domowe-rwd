@@ -1,94 +1,42 @@
-
-/* Główna sekcja styli */
-
-body {
-    margin: 0;
-    width: 100%;
-    font-family: verdana;
+* {
+	box-sizing: border-box;
 }
 
+body {
+	font-family: verdana;
+    margin: 0;
+	
+}
 
-/* Wspólne właściwości dla wszystkich zdjęć */
+/* Wspólna właściwość dla nagłówków */
 
-.foto-man-1 {
-    background-image: url(../obrazy/man-1.jpg);
+h2 {
+	text-transform: uppercase;
+}
+
+/* Właściwość dla głównego okna */
+
+#gallery {
+	margin: 0;
+	background-image: url(../obrazy/man-1.jpg);
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
     position: absolute;
     transition: all .6s;
+    text-align: center;
 }
 
+/* Właściwość dla */
 
-/* Wspólne właściwości dla nagłówków */
-
-.caption {
-    position: relative;
-    color: #fff;
-    margin-left: 30px;
+#gallery .caption {
     text-transform: uppercase;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all .6s;
-}
-
-
-/* Osobna właściwość dla nagłówka h2 */
-
-.foto-man-1 .caption .caption-2 {
-    font-size: 1.5em;
-}
-
-
-/* Rwd dla pierwszego obrazka oraz nagłówka */
-
-@media (max-width: 1170px) {
-    .foto-man-1 {
-        width: 100%;
-    }
-    .foto-man-1 .caption {
-        text-align: left;
-        vertical-align: center;
-    }
-}
-
-
-/* Rwd dla drugiego obrazka i nagłówka */
-
-@media (max-width: 1170px) and (min-width: 992px) {
-    .foto-man-1 {
-        height: 70%;
-        background-image: url(../obrazy/man-2.jpg);
-    }
-    .foto-man-1 .caption{
-        top: 10%;
-        text-align: right;
-        font-size: 0.8em;
-       
-    }
-    
-/* Różna odległość z prawej strony dla h2 i h3 */
-    
-    .foto-man-1 .caption .caption-1 {
-        margin-right: 230px;
-    }
-    .foto-man-1 .caption .caption-2 {
-        margin-right: 5px;
-    }
-}
-
-
-/* Rwd dla trzeciego obrazka i nagłówka */
-
-@media (max-width: 992px) {
-    .foto-man-1 {
-        height: 50%;
-    }
-    .foto-man-1 .caption {
-        transform: translateY(180%);
-        text-align: center;
-        font-size: 0.8em;
-        color: #000;
-    }
+      text-align: left;
+      vertical-align: center;
+      color: #fff;
+      top: 50%;
+      position: relative;
+      margin-left: 30px;
+    line-height: 120%;
 }

@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+#gallery {
+    width: 100%;
+}
+
+
+/* Rwd dla 1170px */
+
+@media (max-width: 1170px) {
+    /*Właściwość dla obrazka - 1170px */
+    #gallery {
+        width: 100%;
+    }
+    /* Właściwości dla nagłówka - 1170px */
+    #gallery .caption {
+        text-align: left;
+        vertical-align: center;
+        color: #fff;
+        top: 50%;
+        position: relative;
+        margin-left: 30px;
+    }
+    /*Właściwość dla drugiego nagłówka - 1170px */
+    #gallery .caption .caption-2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Rwd pomiędzy 1170 px a 992px */
+
+@media (max-width: 1170px) and (min-width: 992px) {
+    /*Właściwość dla obrazka - 1170px a 992px */
+    #gallery {
+        height: 70%;
+        background-image: url(../obrazy/man-2.jpg);
+    }
+    /* Właściwości dla nagłówka - 1170px a 992px */
+    #gallery .caption {
+        top: 5%;
+        font-size: 0.8em;
+        position: relative;
+        text-align: right;
+        line-height: 100%;
+    }
+    /* Właściwości dla pierwszego nagłówka */
+    #gallery .caption .caption-1 {
+        margin-right: 250px;
+    }
+    /* Właściwości dla drugiego nagłowka */
+    #gallery .caption .caption-2 {
+        margin-right: 20px;
+    }
+}
+/* Rwd 992px */
+
+@media (max-width: 992px) {
+    /*Właściwość dla obrazka - 992px */
+    #gallery {
+        height: 50%;
+        background-image: url(../obrazy/man-1.jpg);
+        display: inline-block;
+    }
+    /* Właściwości dla nagłówków - 992px */
+    #gallery .caption {
+        top: 100%;
+        text-align: center;
+        font-size: 0.8em;
+        color: #000;
+        line-height: 100%;
+    }
+}
+
+
+/* Rwd dla mniejszych urządzeń */
+
+@media (max-width: 480px) {
+    /* Właściwośc dla nagłówków */
+    #gallery .caption {
+        text-align: center;
+        font-size: 50%;
+        margin: 5px;
+    }
+}
